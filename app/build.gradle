@@ -5,7 +5,6 @@ plugins {
 android {
     namespace "flix.com.vision"
     compileSdk 34
-    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "flix.com.vision"
@@ -55,8 +54,6 @@ android {
 
 dependencies {
     implementation "androidx.multidex:multidex:2.0.1"
-    implementation "androidx.appcompat:appcompat:1.6.1"
-    implementation "com.google.android.material:material:1.12.0"
-    // Note: most third-party and AndroidX classes are already present as decompiled sources.
-    // Add more dependencies here only if you decide to replace the bundled sources with Maven artifacts.
+    // AndroidX/Material sources and resources are already bundled in the decompiled project.
+    // Avoid re-adding the Maven artifacts to prevent duplicate resource definitions.
 }
