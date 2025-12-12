@@ -1,0 +1,12 @@
+package v9;
+
+import java.util.LinkedHashMap;
+
+/* compiled from: ConstructorConstructor.java */
+/* loaded from: classes.dex */
+public final class i implements u<Object> {
+    @Override // v9.u
+    public Object construct() {
+        return new LinkedHashMap();
+    }
+}

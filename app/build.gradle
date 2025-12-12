@@ -1,0 +1,62 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "flix.com.vision"
+    compileSdk 34
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "flix.com.vision"
+        minSdk 21
+        targetSdk 29
+        versionCode 60
+        versionName "3.1.2r"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        resources {
+            excludes += [
+                    "META-INF/LICENSE*",
+                    "META-INF/NOTICE*",
+                    "META-INF/DEPENDENCIES",
+                    "META-INF/AL2.0",
+                    "META-INF/LGPL2.1"
+            ]
+        }
+    }
+
+    sourceSets {
+        getByName("main") {
+            jniLibs.srcDir("src/main/jniLibs")
+            assets.srcDir("src/main/assets")
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.12.0"
+    // Note: most third-party and AndroidX classes are already present as decompiled sources.
+    // Add more dependencies here only if you decide to replace the bundled sources with Maven artifacts.
+}

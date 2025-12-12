@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/file_item_image_view"
+        android:background="@drawable/fplib_circle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="4dp"/>
+    <TextView
+        android:id="@+id/file_item_file_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/file_item_image_view"
+        style="@style/FileName.Title"/>
+    <TextView
+        android:id="@+id/file_item_file_info"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/file_item_image_view"
+        android:layout_below="@+id/file_item_file_name"
+        style="@style/FileName.Secondary"/>
+    <ImageView
+        android:id="@+id/file_item_file_info_button"
+        android:focusable="false"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

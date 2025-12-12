@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark_OLD"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/splashscreenlottie"
+        app:lottie_speed="1.1"
+        app:lottie_url="REPLACE_JSON_URL"/>
+    <View
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/emiter_bottom"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/loader"
+                android:visibility="gone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:indeterminate="true"
+                app:SpinKit_Color="@color/white"
+                style="@style/SpinKitView.Large.Circle"/>
+        </LinearLayout>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="version 1.2.34"/>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="For Phones, FireTV and Android TV"/>
+    </LinearLayout>
+</RelativeLayout>

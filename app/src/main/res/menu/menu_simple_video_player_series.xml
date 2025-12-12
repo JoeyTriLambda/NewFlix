@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_subtitle"
+        android:id="@+id/subtitle_button"
+        android:orderInCategory="100"
+        android:title="Subtitles"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_pause_cirlce"
+        android:id="@+id/play_pause_button"
+        android:orderInCategory="100"
+        android:title="Play/Pause"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_list"
+        android:id="@+id/episodes_button"
+        android:orderInCategory="100"
+        android:title="Resolution"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_hd"
+        android:id="@+id/hd_button"
+        android:orderInCategory="100"
+        android:title="Scale"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_aspect_ratio"
+        android:id="@+id/aspect_ratio_button"
+        android:orderInCategory="100"
+        android:title="Resolution"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_settings_filled"
+        android:id="@+id/settings_button"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="always"/>
+</menu>

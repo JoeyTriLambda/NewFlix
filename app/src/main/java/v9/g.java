@@ -1,0 +1,12 @@
+package v9;
+
+import java.util.concurrent.ConcurrentHashMap;
+
+/* compiled from: ConstructorConstructor.java */
+/* loaded from: classes.dex */
+public final class g implements u<Object> {
+    @Override // v9.u
+    public Object construct() {
+        return new ConcurrentHashMap();
+    }
+}

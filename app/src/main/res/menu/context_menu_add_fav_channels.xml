@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_action_favorite_border"
+        android:id="@+id/action_add_favorites_live_tv"
+        android:orderInCategory="100"
+        android:title="@string/add_fav_label_tv"
+        app:showAsAction="always"/>
+</menu>

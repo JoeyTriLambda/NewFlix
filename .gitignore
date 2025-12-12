@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+app/build/
+*.iml
+
+# Android Studio / IntelliJ
+.idea/
+.cxx/
+.externalNativeBuild/
+.DS_Store
+Thumbs.db
+
+# Local config
+local.properties
+
+# VS Code
+.vscode/
+
+# Outputs
+*.apk
+*.aab
+*.idsig
+captures/

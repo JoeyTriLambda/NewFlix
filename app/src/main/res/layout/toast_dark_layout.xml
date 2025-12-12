@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_toast_view"
+    android:background="@drawable/darkbackground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp">
+    <ImageView
+        android:id="@+id/dark_toast_icon"
+        android:background="@drawable/color_view_background"
+        android:padding="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_warning_2"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/toast_background_type3"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="55dp"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/dark_toast_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warning"
+            android:textAllCaps="true"
+            android:fontFamily="@font/product_sans_egular"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/dark_toast_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello this is demo warning!"
+            android:fontFamily="@font/product_sans_egular"/>
+    </LinearLayout>
+</RelativeLayout>

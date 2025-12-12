@@ -1,0 +1,12 @@
+package f0;
+
+import androidx.constraintlayout.core.widgets.ConstraintWidget;
+import java.util.HashMap;
+
+/* compiled from: WidgetFrame.java */
+/* loaded from: classes.dex */
+public final class a {
+    public a(ConstraintWidget constraintWidget) {
+        new HashMap();
+    }
+}

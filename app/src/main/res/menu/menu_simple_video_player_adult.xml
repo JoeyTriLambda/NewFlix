@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_aspect_ratio"
+        android:id="@+id/aspect_ratio_button"
+        android:orderInCategory="100"
+        android:title="Scale"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_playlist_play"
+        android:id="@+id/action_related_videos"
+        android:orderInCategory="100"
+        android:title="Related Videos"
+        app:showAsAction="always"/>
+</menu>

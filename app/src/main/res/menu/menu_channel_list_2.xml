@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_action_settings"
+        android:id="@+id/action_settings_goto"
+        android:orderInCategory="100"
+        android:title="Change Player"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_favorite_border"
+        android:id="@+id/action_favorites_channels_list"
+        android:orderInCategory="100"
+        android:title="@string/favorited_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_search"
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always"/>
+</menu>

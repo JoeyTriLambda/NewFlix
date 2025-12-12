@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_action_favorite_border"
+        android:id="@+id/action_favorites_anime"
+        android:orderInCategory="100"
+        android:title="@string/favorited_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_history"
+        android:id="@+id/action_history_anime"
+        android:orderInCategory="100"
+        android:title="@string/watched_label"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_action_search"
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/filter"
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="@string/filter_animes_label"
+        app:showAsAction="always"/>
+</menu>

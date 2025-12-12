@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_player"
+    android:background="@drawable/gradient_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+        android:id="@+id/recyclerview"
+        android:scrollbars="none"
+        android:nextFocusUp="@+id/toolbar"
+        android:nextFocusDown="@+id/activity_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        app:layout_moreProgress="@layout/view_more_progress"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:recyclerClipToPadding="false"
+        app:scrollbarStyle="insideInset"/>
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/transparent"
+            android:nextFocusLeft="@+id/nav_view"
+            android:nextFocusDown="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation="0dp"/>
+        <flix.com.vision.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:nextFocusDown="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MaterialSearchViewStyle"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/season_background"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="50sp">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:id="@+id/season_label_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season 1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="@color/accent"
+            android:id="@+id/episode_count_label"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+package org.threeten.bp.chrono;
+
+import ac.c;
+import java.util.Locale;
+import o1.a;
+import org.threeten.bp.DateTimeException;
+import org.threeten.bp.format.DateTimeFormatterBuilder;
+import org.threeten.bp.format.TextStyle;
+import org.threeten.bp.temporal.ChronoField;
+import org.threeten.bp.temporal.ChronoUnit;
+import org.threeten.bp.temporal.Temporal;
+import org.threeten.bp.temporal.TemporalField;
+import org.threeten.bp.temporal.TemporalQueries;
+import org.threeten.bp.temporal.TemporalQuery;
+import org.threeten.bp.temporal.UnsupportedTemporalTypeException;
+import org.threeten.bp.temporal.ValueRange;
+
+/* loaded from: classes2.dex */
+public enum IsoEra implements Era {
+    BCE,
+    CE;
+
+    public static IsoEra of(int i10) {
+        if (i10 == 0) {
+            return BCE;
+        }
+        if (i10 == 1) {
+            return CE;
+        }
+        throw new DateTimeException(c.f("Invalid era: ", i10));
+    }
+
+    @Override // org.threeten.bp.temporal.TemporalAdjuster
+    public Temporal adjustInto(Temporal temporal) {
+        return temporal.with(ChronoField.ERA, getValue());
+    }
+
+    @Override // org.threeten.bp.temporal.TemporalAccessor
+    public int get(TemporalField temporalField) {
+        return temporalField == ChronoField.ERA ? getValue() : range(temporalField).checkValidIntValue(getLong(temporalField), temporalField);
+    }
+
+    @Override // org.threeten.bp.chrono.Era
+    public String getDisplayName(TextStyle textStyle, Locale locale) {
+        return new DateTimeFormatterBuilder().appendText(ChronoField.ERA, textStyle).toFormatter(locale).format(this);
+    }
+
+    @Override // org.threeten.bp.temporal.TemporalAccessor
+    public long getLong(TemporalField temporalField) {
+        if (temporalField == ChronoField.ERA) {
+            return getValue();
+        }
+        if (temporalField instanceof ChronoField) {
+            throw new UnsupportedTemporalTypeException(a.e("Unsupported field: ", temporalField));
+        }
+        return temporalField.getFrom(this);
+    }
+
+    @Override // org.threeten.bp.chrono.Era
+    public int getValue() {
+        return ordinal();
+    }
+
+    @Override // org.threeten.bp.temporal.TemporalAccessor
+    public boolean isSupported(TemporalField temporalField) {
+        return temporalField instanceof ChronoField ? temporalField == ChronoField.ERA : temporalField != null && temporalField.isSupportedBy(this);
+    }
+
+    @Override // org.threeten.bp.temporal.TemporalAccessor
+    public <R> R query(TemporalQuery<R> temporalQuery) {
+        if (temporalQuery == TemporalQueries.precision()) {
+            return (R) ChronoUnit.ERAS;
+        }
+        if (temporalQuery == TemporalQueries.chronology() || temporalQuery == TemporalQueries.zone() || temporalQuery == TemporalQueries.zoneId() || temporalQuery == TemporalQueries.offset() || temporalQuery == TemporalQueries.localDate() || temporalQuery == TemporalQueries.localTime()) {
+            return null;
+        }
+        return temporalQuery.queryFrom(this);
+    }
+
+    @Override // org.threeten.bp.temporal.TemporalAccessor
+    public ValueRange range(TemporalField temporalField) {
+        if (temporalField == ChronoField.ERA) {
+            return temporalField.range();
+        }
+        if (temporalField instanceof ChronoField) {
+            throw new UnsupportedTemporalTypeException(a.e("Unsupported field: ", temporalField));
+        }
+        return temporalField.rangeRefinedBy(this);
+    }
+}

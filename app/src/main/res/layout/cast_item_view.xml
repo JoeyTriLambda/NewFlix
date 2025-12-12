@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/image_cast"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_color="@color/transparent"
+        app:civ_border_width="2dp"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cast_name"
+        android:paddingTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxLines="1"
+        android:lines="1"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#adffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cast_name_actor"
+        android:paddingTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:lines="1"
+        android:singleLine="true"/>
+</LinearLayout>

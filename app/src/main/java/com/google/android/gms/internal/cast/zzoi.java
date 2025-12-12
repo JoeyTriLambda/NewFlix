@@ -1,0 +1,42 @@
+package com.google.android.gms.internal.cast;
+
+/* compiled from: com.google.android.gms:play-services-cast@@21.4.0 */
+/* loaded from: classes.dex */
+public final class zzoi extends zztp implements zzuy {
+    private static final zzoi zzb;
+    private int zzd;
+    private int zze;
+    private int zzf;
+    private zzna zzg;
+
+    static {
+        zzoi zzoiVar = new zzoi();
+        zzb = zzoiVar;
+        zztp.zzH(zzoi.class, zzoiVar);
+    }
+
+    private zzoi() {
+    }
+
+    @Override // com.google.android.gms.internal.cast.zztp
+    public final Object zzb(int i10, Object obj, Object obj2) {
+        int i11 = i10 - 1;
+        if (i11 == 0) {
+            return (byte) 1;
+        }
+        if (i11 == 2) {
+            return zztp.zzE(zzb, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001᠌\u0000\u0002ဋ\u0001\u0003ဉ\u0002", new Object[]{"zzd", "zze", zzih.zza(), "zzf", "zzg"});
+        }
+        if (i11 == 3) {
+            return new zzoi();
+        }
+        zzms zzmsVar = null;
+        if (i11 == 4) {
+            return new zzoh(zzmsVar);
+        }
+        if (i11 != 5) {
+            return null;
+        }
+        return zzb;
+    }
+}

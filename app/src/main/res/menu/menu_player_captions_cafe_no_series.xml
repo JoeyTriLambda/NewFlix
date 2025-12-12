@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/quality1"
+        android:id="@+id/action_quality"
+        android:orderInCategory="100"
+        android:title="@string/resolution_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_settings_overscan"
+        android:id="@+id/action_scale"
+        android:orderInCategory="100"
+        android:title="Scale"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_file_download"
+        android:id="@+id/action_download"
+        android:orderInCategory="100"
+        android:title="@string/download_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_caption"
+        android:id="@+id/action_captions"
+        android:orderInCategory="100"
+        android:title="@string/captions_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_refresh"
+        android:id="@+id/action_captions_reload"
+        android:orderInCategory="100"
+        android:title="@string/captions_label_reload"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/close"
+        android:id="@+id/action_close"
+        android:orderInCategory="100"
+        android:title="@string/close_label"
+        app:showAsAction="always"/>
+</menu>

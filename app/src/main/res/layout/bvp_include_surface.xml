@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:fitsSystemWindows="false"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextureView
+        android:id="@+id/textureview"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <flix.com.vision.exomedia.ui.widget.VideoView
+        android:id="@+id/video_view"
+        android:background="@color/black"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:useDefaultControls="false"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/view_forward"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableTop="@drawable/ic_forward"
+        android:alpha="0"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/view_backward"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableTop="@drawable/ic_backward"
+        android:alpha="0"/>
+</FrameLayout>

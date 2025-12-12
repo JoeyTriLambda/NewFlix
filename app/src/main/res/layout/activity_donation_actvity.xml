@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supporting the Project"
+                android:fontFamily="@font/product_sans_bold"/>
+            <View
+                android:layout_gravity="center"
+                android:background="@color/accent"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="FLIXVISION will always be Ad-Free. However we need your support to keep the Project going. Yo can make a small donation for a Cup of Coffee to one of our Crypto Wallets listed below:"
+                android:fontFamily="@font/product_sans_bold"/>
+            <View
+                android:layout_gravity="center"
+                android:background="@color/accent"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="WALLET 1"
+                android:fontFamily="@font/product_sans_bold"/>
+            <View
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Currency: ETH | Network: ERC-20"
+                android:fontFamily="@font/product_sans_egular"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: 0x31D0651993B14Fa20Cf3f800e64B03b2712AFef8"
+                android:fontFamily="@font/product_sans_egular"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QR Code: "
+                android:fontFamily="@font/product_sans_egular"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/eth"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="WALLET 2"
+                android:fontFamily="@font/product_sans_bold"/>
+            <View
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Currency: BTC | Network: BTC"
+                android:fontFamily="@font/product_sans_egular"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: 1CESWRKFW2jtW4UAU2nW8cPjT76XjYUdGT"
+                android:fontFamily="@font/product_sans_egular"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QR Code: "
+                android:fontFamily="@font/product_sans_egular"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/btc"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="WALLET 3"
+                android:fontFamily="@font/product_sans_bold"/>
+            <View
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Currency: USDT | Network: ERC-20"
+                android:fontFamily="@font/product_sans_egular"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: TL6Jy18QRmrAyaXKgwm3XaShBHpSwhqmpE"
+                android:fontFamily="@font/product_sans_egular"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QR Code: "
+                android:fontFamily="@font/product_sans_egular"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/usdt"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Want to donate in a different currency?  Send us an Email at donation@flixvision.app and we&apos;ll help you"
+                android:fontFamily="@font/product_sans_egular"/>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/mail_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="OPEN MAIL"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

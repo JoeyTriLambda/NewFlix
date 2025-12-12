@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/watch_now_frame"
+    android:background="@color/colorPrimaryDark"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/watch_now"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:paddingLeft="2dp"
+        android:nextFocusLeft="@+id/storage"
+        android:nextFocusRight="@+id/history"
+        android:nextFocusUp="@+id/storage"
+        android:nextFocusDown="@+id/storage"
+        android:clickable="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/carousel_image"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_play"
+            app:tint="@color/colorAccent"/>
+        <TextView
+            android:textSize="40sp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/rowTextView"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Watch Now"
+            android:maxLines="2"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</FrameLayout>
